@@ -25,12 +25,12 @@
 <meta property="og:url" content="https://meshery.io/catalog/webassembly/" />
 <meta property="og:site_name" content="Meshery" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-07-22T02:19:40+00:00" />
-<meta property="article:modified_time" content="2026-07-22T02:19:40+00:00" />
+<meta property="article:published_time" content="2026-09-07T15:50:24+00:00" />
+<meta property="article:modified_time" content="2026-09-07T15:50:24+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Cloud Native Catalog" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"The Meshery Authors"},"dateModified":"2026-07-22T02:19:40+00:00","datePublished":"2026-07-22T02:19:40+00:00","description":"WASM FILTER HTTP Auth FILTER001 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS HTTP AUTH What this filter does Simulates handling authentication of requests at proxy level. Requests with a header token with value hello are accepted as authorized while the rest unauthorized. The actual authentication is handled by the Upstream server. Whenever the proxy receives a request it extracts the token header and makes a request to the Upstream server which validates the token and returns a response. ...read more Caveats and Considerations Test: curl -H &quot;token&quot;:&quot;hello&quot; 0.0.0.0:18000 -v # Authorized curl -H &quot;token&quot;:&quot;world&quot; 0.0.0.0:18000 -v # Unauthorized Technologies Related Design…","headline":"Cloud Native Catalog","mainEntityOfPage":{"@type":"WebPage","@id":"https://meshery.io/catalog/webassembly/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://meshery.io/assets/images/logos/meshery-gradient.png"},"name":"The Meshery Authors"},"url":"https://meshery.io/catalog/webassembly/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"The Meshery Authors"},"dateModified":"2026-09-07T15:50:24+00:00","datePublished":"2026-09-07T15:50:24+00:00","description":"WASM FILTER HTTP Auth FILTER001 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS HTTP AUTH What this filter does Simulates handling authentication of requests at proxy level. Requests with a header token with value hello are accepted as authorized while the rest unauthorized. The actual authentication is handled by the Upstream server. Whenever the proxy receives a request it extracts the token header and makes a request to the Upstream server which validates the token and returns a response. ...read more Caveats and Considerations Test: curl -H &quot;token&quot;:&quot;hello&quot; 0.0.0.0:18000 -v # Authorized curl -H &quot;token&quot;:&quot;world&quot; 0.0.0.0:18000 -v # Unauthorized Technologies Related Design…","headline":"Cloud Native Catalog","mainEntityOfPage":{"@type":"WebPage","@id":"https://meshery.io/catalog/webassembly/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://meshery.io/assets/images/logos/meshery-gradient.png"},"name":"The Meshery Authors"},"url":"https://meshery.io/catalog/webassembly/"}</script>
 <!-- End Jekyll SEO tag -->
  <link type="application/atom+xml" rel="alternate" href="https://meshery.io/feed.xml" title="Meshery" /> 
     <link rel="stylesheet" href="/css/stellarnav.css" />
@@ -219,6 +219,8 @@
 							
 					
 							
+					
+							
 				<a href="/community
 "   class="nav-text"
 					>
@@ -319,6 +321,18 @@
 							<a href="https://discuss.meshery.io
 " 
 							class="subnav-item">Discussion forums
+							
+							</a>
+						</div>
+					</li>
+					
+					<li >
+						<div  class="sub-nav-li" >
+								<img class="nav-img" src="/assets/images/nav-icons/Leaderboard.svg
+">
+							<a href="/community/leaderboard
+" 
+							class="subnav-item">Leaderboard
 							
 							</a>
 						</div>
@@ -936,7 +950,7 @@ function openTab(evt, tabName) {
         >
           <p class="text-sm-medium title">Designs</p>
           <span class="count-text" style="color: #00b39f">
-            351
+            356
           </span>
         </div>
         <div style="height: 3rem; width: 5rem">
@@ -1068,7 +1082,7 @@ function openTab(evt, tabName) {
         >
           <p class="text-sm-medium title">Models</p>
           <span class="count-text" style="color: #00b39f">
-            394
+            396
           </span>
         </div>
         <div style="height: 3rem; width: 5rem">
@@ -1915,6 +1929,16 @@ function openTab(evt, tabName) {
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
 
       </div>
     </div>
@@ -1931,17 +1955,19 @@ function openTab(evt, tabName) {
       
       <div class="modal-section">
         <h3 class="modal-h3">What this filter does</h3>
-        <p class="content-toggle contentdata">
-          Simulates handling authentication of requests at proxy level. Requests with a header token with value hello are accepted as authorized while the rest unauthorized. The actual authentication is handled by the Upstream server. Whenever the proxy receives a request it extracts the token header and makes a request to the Upstream server which validates the token and returns a response.
-        </p>
+        <div class="content-toggle contentdata">
+          <p>Simulates handling authentication of requests at proxy level. Requests with a header token with value hello are accepted as authorized while the rest unauthorized. The actual authentication is handled by the Upstream server. Whenever the proxy receives a request it extracts the token header and makes a request to the Upstream server which validates the token and returns a response.</p>
+
+        </div>
         <span class="read-more">...read more</span>
       </div>
       <div class="modal-section">
         <h3 class="modal-h3">Caveats and Considerations</h3>
         
-        <p class="contentdata">
-          Test:<br /> <code>curl  -H "token":"hello" 0.0.0.0:18000 -v # Authorized</code> <br /> <code>curl  -H "token":"world" 0.0.0.0:18000 -v # Unauthorized</code>
-        </p>
+        <div class="contentdata">
+          <p>Test:<br /> <code>curl  -H "token":"hello" 0.0.0.0:18000 -v # Authorized</code> <br /> <code>curl  -H "token":"world" 0.0.0.0:18000 -v # Unauthorized</code></p>
+
+        </div>
         
       </div>
       
@@ -2663,6 +2689,16 @@ function openTab(evt, tabName) {
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
 
       </div>
    
@@ -2681,7 +2717,7 @@ function openTab(evt, tabName) {
         
         <a href="/catalog/https://github.com/meshery-extensions/wasm-filters/releases/download/v0.2.3/http_auth_bg.wasm" download="HTTP Auth.yml">
           <button id="resourceDownloadBtn" data-patternId="" onclick="sendCloudTelemetry()"
-            class="import" style="width: 7rem;">
+            class="import import-brand-secondary" style="width: 7rem;">
             Download
           </button>
         </a>
@@ -2689,7 +2725,7 @@ function openTab(evt, tabName) {
         <div class="btn-tooltip-grp">
           <a class="btn tooltip-modal" data-clipboard-target="#copy-url" data-clipboard-text="https://github.com/meshery-extensions/wasm-filters/releases/download/v0.2.3/http_auth_bg.wasm"
             onmouseout="resetCopyText(this)">
-            <button class="import" style="width: 7rem;">Copy URL
+            <button class="import import-brand-tertiary" style="width: 7rem;">Copy URL
             </button>
           </a>
         </div>
@@ -3557,6 +3593,16 @@ function openTab(evt, tabName) {
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
 
       </div>
     </div>
@@ -3573,17 +3619,19 @@ function openTab(evt, tabName) {
       
       <div class="modal-section">
         <h3 class="modal-h3">What this filter does</h3>
-        <p class="content-toggle contentdata">
-          Collects simple metrics for every TCP packet and logs it.
-        </p>
+        <div class="content-toggle contentdata">
+          <p>Collects simple metrics for every TCP packet and logs it.</p>
+
+        </div>
         <span class="read-more">...read more</span>
       </div>
       <div class="modal-section">
         <h3 class="modal-h3">Caveats and Considerations</h3>
         
-        <p class="contentdata">
-          Test:<code>curl 0.0.0.0:18000 -v -d "request body"</code><p>Check the logs for the metrics.</p>
-        </p>
+        <div class="contentdata">
+          <p>Test:<code>curl 0.0.0.0:18000 -v -d "request body"</code>&lt;p&gt;Check the logs for the metrics.&lt;/p&gt;</p>
+
+        </div>
         
       </div>
       
@@ -4305,6 +4353,16 @@ function openTab(evt, tabName) {
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
 
       </div>
    
@@ -4323,7 +4381,7 @@ function openTab(evt, tabName) {
         
         <a href="/catalog/https://github.com/meshery-extensions/wasm-filters/releases/download/v0.2.3/tcp_metrics_bg.wasm" download="TCP Metrics.yml">
           <button id="resourceDownloadBtn" data-patternId="" onclick="sendCloudTelemetry()"
-            class="import" style="width: 7rem;">
+            class="import import-brand-secondary" style="width: 7rem;">
             Download
           </button>
         </a>
@@ -4331,7 +4389,7 @@ function openTab(evt, tabName) {
         <div class="btn-tooltip-grp">
           <a class="btn tooltip-modal" data-clipboard-target="#copy-url" data-clipboard-text="https://github.com/meshery-extensions/wasm-filters/releases/download/v0.2.3/tcp_metrics_bg.wasm"
             onmouseout="resetCopyText(this)">
-            <button class="import" style="width: 7rem;">Copy URL
+            <button class="import import-brand-tertiary" style="width: 7rem;">Copy URL
             </button>
           </a>
         </div>
@@ -5199,6 +5257,16 @@ function openTab(evt, tabName) {
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
 
       </div>
     </div>
@@ -5215,17 +5283,19 @@ function openTab(evt, tabName) {
       
       <div class="modal-section">
         <h3 class="modal-h3">What this filter does</h3>
-        <p class="content-toggle contentdata">
-          Parses the contents of every TCP packet the proxy receives and logs it.
-        </p>
+        <div class="content-toggle contentdata">
+          <p>Parses the contents of every TCP packet the proxy receives and logs it.</p>
+
+        </div>
         <span class="read-more">...read more</span>
       </div>
       <div class="modal-section">
         <h3 class="modal-h3">Caveats and Considerations</h3>
         
-        <p class="contentdata">
-          Test:<br/><code>curl 0.0.0.0:18000 -v -d "request body"</code><p>Check the logs for the packet contents.</p>
-        </p>
+        <div class="contentdata">
+          <p>Test:<br /><code>curl 0.0.0.0:18000 -v -d "request body"</code>&lt;p&gt;Check the logs for the packet contents.&lt;/p&gt;</p>
+
+        </div>
         
       </div>
       
@@ -5947,6 +6017,16 @@ function openTab(evt, tabName) {
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
 
       </div>
    
@@ -5965,7 +6045,7 @@ function openTab(evt, tabName) {
         
         <a href="/catalog/https://github.com/meshery-extensions/wasm-filters/releases/download/v0.2.3/tcp_packet_parse_bg.wasm" download="TCP Packet Parse.yml">
           <button id="resourceDownloadBtn" data-patternId="" onclick="sendCloudTelemetry()"
-            class="import" style="width: 7rem;">
+            class="import import-brand-secondary" style="width: 7rem;">
             Download
           </button>
         </a>
@@ -5973,7 +6053,7 @@ function openTab(evt, tabName) {
         <div class="btn-tooltip-grp">
           <a class="btn tooltip-modal" data-clipboard-target="#copy-url" data-clipboard-text="https://github.com/meshery-extensions/wasm-filters/releases/download/v0.2.3/tcp_packet_parse_bg.wasm"
             onmouseout="resetCopyText(this)">
-            <button class="import" style="width: 7rem;">Copy URL
+            <button class="import import-brand-tertiary" style="width: 7rem;">Copy URL
             </button>
           </a>
         </div>
@@ -6841,6 +6921,16 @@ function openTab(evt, tabName) {
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
 
       </div>
     </div>
@@ -6857,17 +6947,19 @@ function openTab(evt, tabName) {
       
       <div class="modal-section">
         <h3 class="modal-h3">What this filter does</h3>
-        <p class="content-toggle contentdata">
-          The filter is responsible for intercepting HTTP requests, authorizing them based on the stored cache, and performing rate limiting. In the context of the envoy, this component is an HTTP filter and gets executed in the worker threads. For each request, a context object gets created.
-        </p>
+        <div class="content-toggle contentdata">
+          <p>The filter is responsible for intercepting HTTP requests, authorizing them based on the stored cache, and performing rate limiting. In the context of the envoy, this component is an HTTP filter and gets executed in the worker threads. For each request, a context object gets created.</p>
+
+        </div>
         <span class="read-more">...read more</span>
       </div>
       <div class="modal-section">
         <h3 class="modal-h3">Caveats and Considerations</h3>
         
-        <p class="contentdata">
-          llam tristique tristique condimentum. Maecenas sollicitudin scelerisque egestas. Suspendisse aliquet elit quis dolor gravida, et auctor ligula ornare. Nullam et sodales ante, quis varius elit. Nullam cursus, orci eleifend tristique semper, neque nisl tincidunt purus, sed ultricies felis arcu vel metus. 
-        </p>
+        <div class="contentdata">
+          <p>llam tristique tristique condimentum. Maecenas sollicitudin scelerisque egestas. Suspendisse aliquet elit quis dolor gravida, et auctor ligula ornare. Nullam et sodales ante, quis varius elit. Nullam cursus, orci eleifend tristique semper, neque nisl tincidunt purus, sed ultricies felis arcu vel metus.</p>
+
+        </div>
         
       </div>
       
@@ -7589,6 +7681,16 @@ function openTab(evt, tabName) {
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
 
       </div>
    
@@ -7607,7 +7709,7 @@ function openTab(evt, tabName) {
         
         <a href="/catalog/https://raw.githubusercontent.com/meshery-extensions/wasm-filters/master/singleton_http_call_bg.wasm" download="Singleton HTTP Call.yml">
           <button id="resourceDownloadBtn" data-patternId="" onclick="sendCloudTelemetry()"
-            class="import" style="width: 7rem;">
+            class="import import-brand-secondary" style="width: 7rem;">
             Download
           </button>
         </a>
@@ -7615,7 +7717,7 @@ function openTab(evt, tabName) {
         <div class="btn-tooltip-grp">
           <a class="btn tooltip-modal" data-clipboard-target="#copy-url" data-clipboard-text=""
             onmouseout="resetCopyText(this)">
-            <button class="import" style="width: 7rem;">Copy URL
+            <button class="import import-brand-tertiary" style="width: 7rem;">Copy URL
             </button>
           </a>
         </div>
@@ -8483,6 +8585,16 @@ function openTab(evt, tabName) {
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
 
       </div>
     </div>
@@ -8499,17 +8611,19 @@ function openTab(evt, tabName) {
       
       <div class="modal-section">
         <h3 class="modal-h3">What this filter does</h3>
-        <p class="content-toggle contentdata">
-          This example showcases communication between a WASM filter and a service via shared queue. It combines the `Singleton-HTTP-Call` and `TCP-Metrics` examples. The filter collects metrics and enqueues it onto the queue while the service dequeues it and sends it to upstream server where it is stored.
-        </p>
+        <div class="content-toggle contentdata">
+          <p>This example showcases communication between a WASM filter and a service via shared queue. It combines the <code class="language-plaintext highlighter-rouge">Singleton-HTTP-Call</code> and <code class="language-plaintext highlighter-rouge">TCP-Metrics</code> examples. The filter collects metrics and enqueues it onto the queue while the service dequeues it and sends it to upstream server where it is stored.</p>
+
+        </div>
         <span class="read-more">...read more</span>
       </div>
       <div class="modal-section">
         <h3 class="modal-h3">Caveats and Considerations</h3>
         
-        <p class="contentdata">
-          Test:<code>curl 0.0.0.0:18000 -v -d "request body" # make a few of these calls</code><br /><code>curl 0.0.0.0:8080/retrieve -v # Retrieves the stored stats <br /> # x | y | z  === x : downstream bytes, y : upstream bytes, z: the latency for application server to respond</code>
-        </p>
+        <div class="contentdata">
+          <p>Test:<code>curl 0.0.0.0:18000 -v -d "request body" # make a few of these calls</code><br /><code>curl 0.0.0.0:8080/retrieve -v # Retrieves the stored stats <br /> # x | y | z  === x : downstream bytes, y : upstream bytes, z: the latency for application server to respond</code></p>
+
+        </div>
         
       </div>
       
@@ -9231,6 +9345,16 @@ function openTab(evt, tabName) {
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
 
       </div>
    
@@ -9249,7 +9373,7 @@ function openTab(evt, tabName) {
         
         <a href="/catalog/https://github.com/meshery-extensions/wasm-filters/releases/download/v0.2.3/metrics_collector_bg.wasm" download="Metrics Store.yml">
           <button id="resourceDownloadBtn" data-patternId="" onclick="sendCloudTelemetry()"
-            class="import" style="width: 7rem;">
+            class="import import-brand-secondary" style="width: 7rem;">
             Download
           </button>
         </a>
@@ -9257,7 +9381,7 @@ function openTab(evt, tabName) {
         <div class="btn-tooltip-grp">
           <a class="btn tooltip-modal" data-clipboard-target="#copy-url" data-clipboard-text="https://github.com/meshery-extensions/wasm-filters/releases/download/v0.2.3/metrics_collector_bg.wasm"
             onmouseout="resetCopyText(this)">
-            <button class="import" style="width: 7rem;">Copy URL
+            <button class="import import-brand-tertiary" style="width: 7rem;">Copy URL
             </button>
           </a>
         </div>
@@ -10125,6 +10249,16 @@ function openTab(evt, tabName) {
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
 
       </div>
     </div>
@@ -10141,17 +10275,19 @@ function openTab(evt, tabName) {
       
       <div class="modal-section">
         <h3 class="modal-h3">What this filter does</h3>
-        <p class="content-toggle contentdata">
-          An example which depicts an singleton HTTP WASM service which does an HTTP call once every 2 seconds.
-        </p>
+        <div class="content-toggle contentdata">
+          <p>An example which depicts an singleton HTTP WASM service which does an HTTP call once every 2 seconds.</p>
+
+        </div>
         <span class="read-more">...read more</span>
       </div>
       <div class="modal-section">
         <h3 class="modal-h3">Caveats and Considerations</h3>
         
-        <p class="contentdata">
-          Check the logs for the response of the request.
-        </p>
+        <div class="contentdata">
+          <p>Check the logs for the response of the request.</p>
+
+        </div>
         
       </div>
       
@@ -10873,6 +11009,16 @@ function openTab(evt, tabName) {
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
 
       </div>
    
@@ -10891,7 +11037,7 @@ function openTab(evt, tabName) {
         
         <a href="/catalog/https://github.com/meshery-extensions/wasm-filters/releases/download/v0.2.3/singleton_http_call_bg.wasm" download="Singleton Queue.yml">
           <button id="resourceDownloadBtn" data-patternId="" onclick="sendCloudTelemetry()"
-            class="import" style="width: 7rem;">
+            class="import import-brand-secondary" style="width: 7rem;">
             Download
           </button>
         </a>
@@ -10899,7 +11045,7 @@ function openTab(evt, tabName) {
         <div class="btn-tooltip-grp">
           <a class="btn tooltip-modal" data-clipboard-target="#copy-url" data-clipboard-text="https://github.com/meshery-extensions/wasm-filters/releases/download/v0.2.3/singleton_http_call_bg.wasm"
             onmouseout="resetCopyText(this)">
-            <button class="import" style="width: 7rem;">Copy URL
+            <button class="import import-brand-tertiary" style="width: 7rem;">Copy URL
             </button>
           </a>
         </div>
@@ -11767,6 +11913,16 @@ function openTab(evt, tabName) {
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
 
       </div>
     </div>
@@ -11783,17 +11939,19 @@ function openTab(evt, tabName) {
       
       <div class="modal-section">
         <h3 class="modal-h3">What this filter does</h3>
-        <p class="content-toggle contentdata">
-          Sample configuration to be passed:<code>{<br />"add_header": [<br />    ["header1","value1"],<br /> ["header2","value2"]<br />  ],<br /> "del_header":[ <br />"header1"<br />            ],<br />"add_payload": [<br />  ["payload1","value1"],<br /> ["payload2","value2"],<br />],<br /> "del_payload":[<br /> "payload1"<br />],<br />"payload_to_header": [<br />"payload2"<br />],<br />"header_to_payload": [<br />"header2"<br />]<br />}</code>
-        </p>
+        <div class="content-toggle contentdata">
+          <p>Sample configuration to be passed:<code>{<br />"add_header": [<br />    ["header1","value1"],<br /> ["header2","value2"]<br />  ],<br /> "del_header":[ <br />"header1"<br />            ],<br />"add_payload": [<br />  ["payload1","value1"],<br /> ["payload2","value2"],<br />],<br /> "del_payload":[<br /> "payload1"<br />],<br />"payload_to_header": [<br />"payload2"<br />],<br />"header_to_payload": [<br />"header2"<br />]<br />}</code></p>
+
+        </div>
         <span class="read-more">...read more</span>
       </div>
       <div class="modal-section">
         <h3 class="modal-h3">Caveats and Considerations</h3>
         
-        <p class="contentdata">
-          DISCLAIMER: This filter doesn't regenerate the signature of the modified JWT, and provides no protections. Proceed with caution.
-        </p>
+        <div class="contentdata">
+          <p>DISCLAIMER: This filter doesn’t regenerate the signature of the modified JWT, and provides no protections. Proceed with caution.</p>
+
+        </div>
         
       </div>
       
@@ -12515,6 +12673,16 @@ function openTab(evt, tabName) {
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
 
       </div>
    
@@ -12533,7 +12701,7 @@ function openTab(evt, tabName) {
         
         <a href="/catalog/https://github.com/meshery-extensions/wasm-filters/releases/download/v0.2.3/jwt_filter_bg.wasm" download="JWT Filter.yml">
           <button id="resourceDownloadBtn" data-patternId="" onclick="sendCloudTelemetry()"
-            class="import" style="width: 7rem;">
+            class="import import-brand-secondary" style="width: 7rem;">
             Download
           </button>
         </a>
@@ -12541,7 +12709,7 @@ function openTab(evt, tabName) {
         <div class="btn-tooltip-grp">
           <a class="btn tooltip-modal" data-clipboard-target="#copy-url" data-clipboard-text="https://github.com/meshery-extensions/wasm-filters/releases/download/v0.2.3/jwt_filter_bg.wasm"
             onmouseout="resetCopyText(this)">
-            <button class="import" style="width: 7rem;">Copy URL
+            <button class="import import-brand-tertiary" style="width: 7rem;">Copy URL
             </button>
           </a>
         </div>
@@ -13237,18 +13405,23 @@ function openTab(evt, tabName) {
 	const currentMode = localStorage.getItem("mode");
 	if (isDark ^ (currentMode === "dark-mode")) {
 		setMode();
+	} else {
+		// Body already matches the stored theme, so setMode() is not called here.
+		// Sync every theme-aware logo to the current theme so logos that render
+		// after the header script (such as #l5-logo) show the correct image on
+		// load instead of waiting for a manual toggle.
+		document.querySelectorAll("#logo-dark-light, .logo-dark-light").forEach(e => {
+			e.src = document.body.classList.contains("dark-mode") ? e.dataset.logoForDark : e.dataset.logoForLight;
+		});
 	}
 
 	function setMode() {
 		document.body.classList.toggle("dark-mode")
 		
-		let l5Logos = document.querySelectorAll("#l5-logo");
 		let allLogos = document.querySelectorAll("#logo-dark-light, .logo-dark-light");
 		if (document.body.classList.contains("dark-mode")) {
-			l5Logos.forEach(e => e.src = '../assets/images/company-logo/dark-mode-logo.svg')
 			allLogos.forEach(e => e.src = e.dataset.logoForDark)
 		} else {
-			l5Logos.forEach(e => e.src = '../assets/images/company-logo/no-trim.svg')
 			allLogos.forEach(e => e.src = e.dataset.logoForLight)
 		}
 		if (document.body.classList.contains("dark-mode")) {

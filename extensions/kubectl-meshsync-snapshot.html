@@ -19,18 +19,18 @@
 <meta property="og:title" content="Kubectl Meshsync Snapshot" />
 <meta name="author" content="The Meshery Authors" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Simplify Networking: Overcome common networking challenges between your infrastructure (e.g Kuberentes cluster) and your Meshery Server deployment. - Simplify Access Level Requirements: Overcome the need privileged, write access required by a full Meshery deployment, using read-only access to generate a MeshSync snapshot. Snapshot Capture: Works with a single manifest of a single resource, for entire namespaces, or single cluster visualizations." />
-<meta name="twitter:description" property="og:description" content="Simplify Networking: Overcome common networking challenges between your infrastructure (e.g Kuberentes cluster) and your Meshery Server deployment. - Simplify Access Level Requirements: Overcome the need privileged, write access required by a full Meshery deployment, using read-only access to generate a MeshSync snapshot. Snapshot Capture: Works with a single manifest of a single resource, for entire namespaces, or single cluster visualizations." />
+<meta name="description" content="Simplify Networking: Overcome common networking challenges between your infrastructure (e.g. Kubernetes cluster) and your Meshery Server deployment. - Simplify Access Level Requirements: Overcome the need privileged, write access required by a full Meshery deployment, using read-only access to generate a MeshSync snapshot. Snapshot Capture: Works with a single manifest of a single resource, for entire namespaces, or single cluster visualizations." />
+<meta name="twitter:description" property="og:description" content="Simplify Networking: Overcome common networking challenges between your infrastructure (e.g. Kubernetes cluster) and your Meshery Server deployment. - Simplify Access Level Requirements: Overcome the need privileged, write access required by a full Meshery deployment, using read-only access to generate a MeshSync snapshot. Snapshot Capture: Works with a single manifest of a single resource, for entire namespaces, or single cluster visualizations." />
 <link rel="canonical" href="https://meshery.io/extensions/kubectl-meshsync-snapshot" />
 <meta property="og:url" content="https://meshery.io/extensions/kubectl-meshsync-snapshot" />
 <meta property="og:site_name" content="Meshery" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-07-22T02:19:40+00:00" />
-<meta property="article:modified_time" content="2026-07-22T02:19:40+00:00" />
+<meta property="article:published_time" content="2026-09-07T15:50:24+00:00" />
+<meta property="article:modified_time" content="2026-09-07T15:50:24+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Kubectl Meshsync Snapshot" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"The Meshery Authors"},"dateModified":"2026-07-22T02:19:40+00:00","datePublished":"2026-07-22T02:19:40+00:00","description":"Simplify Networking: Overcome common networking challenges between your infrastructure (e.g Kuberentes cluster) and your Meshery Server deployment. - Simplify Access Level Requirements: Overcome the need privileged, write access required by a full Meshery deployment, using read-only access to generate a MeshSync snapshot. Snapshot Capture: Works with a single manifest of a single resource, for entire namespaces, or single cluster visualizations.","headline":"Kubectl Meshsync Snapshot","mainEntityOfPage":{"@type":"WebPage","@id":"https://meshery.io/extensions/kubectl-meshsync-snapshot"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://meshery.io/assets/images/logos/meshery-gradient.png"},"name":"The Meshery Authors"},"url":"https://meshery.io/extensions/kubectl-meshsync-snapshot"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"The Meshery Authors"},"dateModified":"2026-09-07T15:50:24+00:00","datePublished":"2026-09-07T15:50:24+00:00","description":"Simplify Networking: Overcome common networking challenges between your infrastructure (e.g. Kubernetes cluster) and your Meshery Server deployment. - Simplify Access Level Requirements: Overcome the need privileged, write access required by a full Meshery deployment, using read-only access to generate a MeshSync snapshot. Snapshot Capture: Works with a single manifest of a single resource, for entire namespaces, or single cluster visualizations.","headline":"Kubectl Meshsync Snapshot","mainEntityOfPage":{"@type":"WebPage","@id":"https://meshery.io/extensions/kubectl-meshsync-snapshot"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://meshery.io/assets/images/logos/meshery-gradient.png"},"name":"The Meshery Authors"},"url":"https://meshery.io/extensions/kubectl-meshsync-snapshot"}</script>
 <!-- End Jekyll SEO tag -->
  <link type="application/atom+xml" rel="alternate" href="https://meshery.io/feed.xml" title="Meshery" /> 
     <link rel="stylesheet" href="/css/stellarnav.css" />
@@ -219,6 +219,8 @@
 							
 					
 							
+					
+							
 				<a href="/community
 "   class="nav-text"
 					>
@@ -319,6 +321,18 @@
 							<a href="https://discuss.meshery.io
 " 
 							class="subnav-item">Discussion forums
+							
+							</a>
+						</div>
+					</li>
+					
+					<li >
+						<div  class="sub-nav-li" >
+								<img class="nav-img" src="/assets/images/nav-icons/Leaderboard.svg
+">
+							<a href="/community/leaderboard
+" 
+							class="subnav-item">Leaderboard
 							
 							</a>
 						</div>
@@ -516,10 +530,10 @@
 		</style>
 		<div class="modal-content" style="margin-top:2rem;">
 			<div class="modal-image">
-				<img class="image-class" data-snapshot-light="/assets/images/logos/meshsync-white.svg"
-					data-snapshot-dark="/assets/images/logos/meshsync.svg" src="/assets/images/logos/meshsync-white.svg"
+				<img class="image-class" data-snapshot-light="/assets/images/logos/meshsync.svg"
+					data-snapshot-dark="/assets/images/logos/meshsync.svg" src="/assets/images/logos/meshsync.svg"
 					onerror="this.src='/assets/images/meshery-color.svg'" loading="lazy"
-					onclick="toggleFullScreenImage('/assets/images/logos/meshsync-white.svg', 'extension')" alt="Kubectl Meshsync Snapshot" />
+					onclick="toggleFullScreenImage('/assets/images/logos/meshsync.svg', 'extension')" alt="Kubectl Meshsync Snapshot" />
 			</div>
 			<br />
 			<div class="vertical-line"></div>
@@ -536,7 +550,7 @@ This snapshot of state of your Kubernetes clusters can then be imported into Mes
   </span> -->
 
 				<h3 class="modal-h3">Features</h3>
-				<p class="content-toggle contentdata pre-white-space">- Simplify Networking: Overcome common networking challenges between your infrastructure (e.g Kuberentes cluster) and your Meshery Server deployment. - Simplify Access Level Requirements: Overcome the need privileged, write access required by a full Meshery deployment, using read-only access to generate a MeshSync snapshot.
+				<p class="content-toggle contentdata pre-white-space">- Simplify Networking: Overcome common networking challenges between your infrastructure (e.g. Kubernetes cluster) and your Meshery Server deployment. - Simplify Access Level Requirements: Overcome the need privileged, write access required by a full Meshery deployment, using read-only access to generate a MeshSync snapshot.
 - Snapshot Capture: Works with a single manifest of a single resource, for entire namespaces, or single cluster visualizations.
 </p>
 				<!-- <span class="read-more" href="read-more.html"><a class="external" href="" target="_blank">
@@ -548,10 +562,10 @@ This snapshot of state of your Kubernetes clusters can then be imported into Mes
 						<div class="vertical-center" id="">
 							<div class="btn-grp">
 								
-								<a href="https://docs.meshery.io/extensions/kubectl-meshsync-snapshot">
-									<button class="import-secondary" style="width: 7rem;">Learn More</button></a>
-								
 								<div class="btn-tooltip-grp">
+									
+									<a href="https://github.com/meshery-extensions/kubectl-meshsync-snapshot">
+										<button class="import" style="width: 7rem;">Visit</button></a>
 									
 								</div>
 							</div>
@@ -945,18 +959,23 @@ This snapshot of state of your Kubernetes clusters can then be imported into Mes
 	const currentMode = localStorage.getItem("mode");
 	if (isDark ^ (currentMode === "dark-mode")) {
 		setMode();
+	} else {
+		// Body already matches the stored theme, so setMode() is not called here.
+		// Sync every theme-aware logo to the current theme so logos that render
+		// after the header script (such as #l5-logo) show the correct image on
+		// load instead of waiting for a manual toggle.
+		document.querySelectorAll("#logo-dark-light, .logo-dark-light").forEach(e => {
+			e.src = document.body.classList.contains("dark-mode") ? e.dataset.logoForDark : e.dataset.logoForLight;
+		});
 	}
 
 	function setMode() {
 		document.body.classList.toggle("dark-mode")
 		
-		let l5Logos = document.querySelectorAll("#l5-logo");
 		let allLogos = document.querySelectorAll("#logo-dark-light, .logo-dark-light");
 		if (document.body.classList.contains("dark-mode")) {
-			l5Logos.forEach(e => e.src = '../assets/images/company-logo/dark-mode-logo.svg')
 			allLogos.forEach(e => e.src = e.dataset.logoForDark)
 		} else {
-			l5Logos.forEach(e => e.src = '../assets/images/company-logo/no-trim.svg')
 			allLogos.forEach(e => e.src = e.dataset.logoForLight)
 		}
 		if (document.body.classList.contains("dark-mode")) {

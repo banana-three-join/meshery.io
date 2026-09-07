@@ -218,6 +218,8 @@
 							
 					
 							
+					
+							
 				<a href="/community
 "   class="nav-text"
 					>
@@ -318,6 +320,18 @@
 							<a href="https://discuss.meshery.io
 " 
 							class="subnav-item">Discussion forums
+							
+							</a>
+						</div>
+					</li>
+					
+					<li >
+						<div  class="sub-nav-li" >
+								<img class="nav-img" src="/assets/images/nav-icons/Leaderboard.svg
+">
+							<a href="/community/leaderboard
+" 
+							class="subnav-item">Leaderboard
 							
 							</a>
 						</div>
@@ -1775,6 +1789,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 .archive-year > li > details {
   padding: 0rem .95rem
@@ -1782,9 +1798,12 @@
 .archive-year{
   box-sizing: border-box;
   border-radius: 0.5rem;
+  width: 100%;
 }
 details.archive-month {
   padding: 0rem .95rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 .archive-year > summary,
 .archive-month > summary {
@@ -1805,24 +1824,27 @@ details.archive-month {
   max-width: 500px;
 }
 ul.archive-months {
- padding-inline-start: 0;
- margin-left: -.5rem;
- width: 200px;
+  padding-inline-start: 1rem;
+  margin-left: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 .archive-posts {
   list-style: none;
-  min-width: 100px;
-  padding-left: 0rem;
-  margin-left: -15px;
+  padding-left: 1rem;
+  margin-left: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 .archive-posts li a {
   color: var(--color-secondary-dark);
   text-decoration: none;
-  display: inline-block;
+  display: block;
   padding: 0.75rem 0rem;
   line-height: 1.2;
-  width: 200px;
-  text-overflow: ellipsis;
+  width: 100%;
+  white-space: normal;
+  word-break: break-word;
   border-radius: 0.5px;
   border-bottom: 2px solid var(--brand-color-secondary);
 
@@ -1868,6 +1890,8 @@ ul.archive-months {
   .blog-sidebar {
     grid-column: 1;
     margin-right: auto;
+    max-width: 100% !important;
+    width: 100%;
   }
 
   .blog-search-container {
@@ -2290,18 +2314,23 @@ ul.archive-months {
 	const currentMode = localStorage.getItem("mode");
 	if (isDark ^ (currentMode === "dark-mode")) {
 		setMode();
+	} else {
+		// Body already matches the stored theme, so setMode() is not called here.
+		// Sync every theme-aware logo to the current theme so logos that render
+		// after the header script (such as #l5-logo) show the correct image on
+		// load instead of waiting for a manual toggle.
+		document.querySelectorAll("#logo-dark-light, .logo-dark-light").forEach(e => {
+			e.src = document.body.classList.contains("dark-mode") ? e.dataset.logoForDark : e.dataset.logoForLight;
+		});
 	}
 
 	function setMode() {
 		document.body.classList.toggle("dark-mode")
 		
-		let l5Logos = document.querySelectorAll("#l5-logo");
 		let allLogos = document.querySelectorAll("#logo-dark-light, .logo-dark-light");
 		if (document.body.classList.contains("dark-mode")) {
-			l5Logos.forEach(e => e.src = '../assets/images/company-logo/dark-mode-logo.svg')
 			allLogos.forEach(e => e.src = e.dataset.logoForDark)
 		} else {
-			l5Logos.forEach(e => e.src = '../assets/images/company-logo/no-trim.svg')
 			allLogos.forEach(e => e.src = e.dataset.logoForLight)
 		}
 		if (document.body.classList.contains("dark-mode")) {
