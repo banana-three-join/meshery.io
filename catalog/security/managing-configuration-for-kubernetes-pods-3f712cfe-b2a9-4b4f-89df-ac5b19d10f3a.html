@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="test" content="testing" />
     <!-- Google Tag Manager -->
+    
     <meta name="description" content="This design pattern demonstrates the standard method for managing and injecting configuration into Pods within a Kubernetes environment.
 t is based on a diagram from the Exoscale documentation.
 " />
+    
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -16,9 +17,9 @@ t is based on a diagram from the Exoscale documentation.
     })(window,document,'script','dataLayer','GTM-KL6SSW5');</script>
     <!-- End Google Tag Manager -->
     <!-- Begin Jekyll SEO tag v2.9.0 -->
-<title>3f712cfe B2a9 4b4f 89df Ac5b19d10f3a | Meshery</title>
+<title>Managing Configuration for Kubernetes Pods | Meshery</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="3f712cfe B2a9 4b4f 89df Ac5b19d10f3a" />
+<meta property="og:title" content="Managing Configuration for Kubernetes Pods" />
 <meta name="author" content="The Meshery Authors" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="The extensible cloud native manager. Confidently wrangle cloud native infrastructure with Meshery." />
@@ -28,13 +29,13 @@ t is based on a diagram from the Exoscale documentation.
 <meta property="og:site_name" content="Meshery" />
 <meta property="og:image" content="https://meshery.io/assets/images/logos/service-mesh-pattern.svg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-09-07T15:50:24+00:00" />
-<meta property="article:modified_time" content="2026-09-07T15:50:24+00:00" />
+<meta property="article:published_time" content="2026-10-08T16:34:53+00:00" />
+<meta property="article:modified_time" content="2026-10-08T16:34:53+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://meshery.io/assets/images/logos/service-mesh-pattern.svg" />
-<meta name="twitter:title" content="3f712cfe B2a9 4b4f 89df Ac5b19d10f3a" />
+<meta name="twitter:title" content="Managing Configuration for Kubernetes Pods" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"The Meshery Authors"},"dateModified":"2026-09-07T15:50:24+00:00","datePublished":"2026-09-07T15:50:24+00:00","description":"The extensible cloud native manager. Confidently wrangle cloud native infrastructure with Meshery.","headline":"3f712cfe B2a9 4b4f 89df Ac5b19d10f3a","image":"https://meshery.io/assets/images/logos/service-mesh-pattern.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://meshery.io/catalog/security/managing-configuration-for-kubernetes-pods-3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://meshery.io/assets/images/logos/meshery-gradient.png"},"name":"The Meshery Authors"},"url":"https://meshery.io/catalog/security/managing-configuration-for-kubernetes-pods-3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"The Meshery Authors"},"dateModified":"2026-10-08T16:34:53+00:00","datePublished":"2026-10-08T16:34:53+00:00","description":"The extensible cloud native manager. Confidently wrangle cloud native infrastructure with Meshery.","headline":"Managing Configuration for Kubernetes Pods","image":"https://meshery.io/assets/images/logos/service-mesh-pattern.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://meshery.io/catalog/security/managing-configuration-for-kubernetes-pods-3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://meshery.io/assets/images/logos/meshery-gradient.png"},"name":"The Meshery Authors"},"url":"https://meshery.io/catalog/security/managing-configuration-for-kubernetes-pods-3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a.html"}</script>
 <!-- End Jekyll SEO tag -->
  <link type="application/atom+xml" rel="alternate" href="https://meshery.io/feed.xml" title="Meshery" /> 
     <link rel="stylesheet" href="/css/stellarnav.css" />
@@ -66,7 +67,6 @@ t is based on a diagram from the Exoscale documentation.
     
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Meshery" />
     <meta name="twitter:site" content="@mesheryio" />
     <meta name="twitter:creator" content="@mesheryio" />
     <meta name="author" content="Meshery Authors">
@@ -152,7 +152,7 @@ t is based on a diagram from the Exoscale documentation.
             id="logo-dark-light" />
         </a>
       </div>
-      <nav class="navmenu-container" style="margin-left: 10rem; width: 60%;">
+      <nav class="navmenu-container">
 	<div class="stellarnav">
 		<ul class="nav-list">
 			
@@ -529,9 +529,108 @@ t is based on a diagram from the Exoscale documentation.
 	<div class="post-content">
 		
 <div class="single-page">
-  <div class="modal-image-container">
+  
+  
+  
+  
 
-    <h4>Catalog Details</h4>
+  <div class="catalog-content">
+    <h3>What This Design Does:</h3>
+    
+      <p class="pre-white-space">This design pattern demonstrates the standard method for managing and injecting configuration into Pods within a Kubernetes environment.
+t is based on a diagram from the Exoscale documentation.
+</p>
+    
+
+    <h4 class="design-snapshot">Design Snapshot</h4>
+    <img class="pattern-snapshot"
+      src="https://raw.githubusercontent.com/meshery-extensions/meshery-extensions-packages/master/action-assets/design-assets/3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a-light.png"
+      onerror="this.src='/assets/images/logos/service-mesh-pattern.svg'" loading="lazy" onclick="toggleFullScreenImage('3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a-light')"
+      alt="Managing Configuration for Kubernetes Pods design snapshot"/>
+
+    <h3>Caveats and Consideration:</h3>
+    
+      <p class="pre-white-space">The purpose is for visualization and learning, not for direct production deployment without modification.
+</p>
+    
+
+    <h3>Compatibility:</h3>
+        <style>
+        .service-mesh-image{
+            margin: 1.2rem;
+        }
+    </style>
+    <div class="comatibility-grid">
+    
+    
+    
+    <a href="/catalog/models/kubernetes">
+    <!-- Please remove these hardcoding -->
+    <!-- This would require updating the already published content with correct compatibility -->
+    
+        <img class="service-mesh-image" src="/images/integrations/kubernetes/icons/color/kubernetes-color.svg" />
+    
+    </a>
+    
+</div>
+
+    
+
+
+
+
+<div id="copy-url">
+  <div class="btn-class">
+    <div class="vertical-center" id="Managing Configuration for Kubernetes Pods">
+      <div class="btn-grp">
+        
+        <a href="https://playground.meshery.io/extension/meshmap?mode=design&type=catalog&id=3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a&name=Managing Configuration for Kubernetes Pods"
+          target="_blank">
+          <button class="import import-brand-primary" style="width: 15rem;">Open in Playground </button>
+        </a>
+        
+
+       
+        
+        <a href="/catalog/3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a/0.0.61/design.yml" download="Managing Configuration for Kubernetes Pods.yml">
+          <button id="resourceDownloadBtn" data-patternId="3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a" onclick="sendCloudTelemetry()"
+            class="import import-brand-secondary" style="width: 7rem;">
+            Download
+          </button>
+        </a>
+
+        <div class="btn-tooltip-grp">
+          <a class="btn tooltip-modal" data-clipboard-target="#copy-url" data-clipboard-text="https://raw.githubusercontent.com/meshery/meshery.io/master/catalog/3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a/0.0.61/design.yml"
+            onmouseout="resetCopyText(this)">
+            <button class="import import-brand-tertiary" style="width: 7rem;">
+              Copy URL
+            </button>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+
+  function sendCloudTelemetry() {
+
+    const element = document.getElementById("resourceDownloadBtn")
+    const patternId = element.dataset.patternid
+    patternId && fetch(`https://cloud.meshery.io/api/content/patterns/download/${patternId}`)
+  }
+
+</script>
+  </div>
+
+  <div class="modal-image-container">
+    <h4>Design Details</h4>
+    
       <!-- 
         <div>
         <span class="pattern-type">
@@ -546,12 +645,27 @@ t is based on a diagram from the Exoscale documentation.
         <ul style="list-style: none; padding:0rem; margin:0rem;" class="catalog-item-detail">
 
           <li><p>CATEGORY</p>
-            <div>security</div>
+            
+            <div class="category-tag">security</div>
+            
           </li>
 
-          <li><p>UUID</p>
-            <div>3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a</div>
-          </li>
+          <!-- <li><p>ID</p>
+            <div class="catalog-design-id">
+              <span class="catalog-design-id-value">3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a</span>
+              <span class="catalog-design-id-copy-wrapper">
+                <button
+                  type="button"
+                  class="btn catalog-design-id-copy"
+                  data-clipboard-text="3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a"
+                  aria-label="Copy design ID"
+                >
+                  <i class="far fa-copy" aria-hidden="true"></i>
+                </button>
+                <span class="copy-feedback" role="status"></span>
+              </span>
+            </div>
+          </li> -->
 
           <li><p>CREATED BY</p>
             <div><a href="https://cloud.meshery.io/user/4fb65012-abb5-4098-9df4-43e0eb380132">Harshit Kandpal</a></div>
@@ -562,7 +676,9 @@ t is based on a diagram from the Exoscale documentation.
           </li>
 
           <li><p>VERSION</p>
-            <div>0.0.61</div>
+            
+            <div class="category-tag">0.0.61</div>
+            
           </li>
           <li>
             <p>MODELS</p>
@@ -581,14 +697,29 @@ t is based on a diagram from the Exoscale documentation.
     </div>
 
     <div class="modal-image-single">
-      <h4>Design Snapshot</h4>
-      <img class="pattern-snapshot"
-      src="https://raw.githubusercontent.com/meshery-extensions/meshery-extensions-packages/master/action-assets/design-assets/3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a-light.png"
-      onerror="this.src='/assets/images/logos/service-mesh-pattern.svg'" loading="lazy" onclick="toggleFullScreenImage('3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a-light')"/>
-
       <h4 class="related-patterns">Related Designs</h4>
       <!-- MINICARD-START -->
       <!-- more conditions will be needed to be added when more patterns are introduced.  -->
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -1236,105 +1367,8 @@ t is based on a diagram from the Exoscale documentation.
   <!-- MINICARD-END -->
 
   
-  
-  
-  
-  <div>
-    <h3>What This Design Does:</h3>
-    
-      <p class="pre-white-space">This design pattern demonstrates the standard method for managing and injecting configuration into Pods within a Kubernetes environment.
-t is based on a diagram from the Exoscale documentation.
-</p>
-    
-
-    <h3>Caveats and Consideration:</h3>
-    
-      <p class="pre-white-space">The purpose is for visualization and learning, not for direct production deployment without modification.
-</p>
-    
-
-    <h3>Compatibility:</h3>
-      <br />
-          <style>
-        .service-mesh-image{
-            margin: 1.2rem;
-        }
-    </style>
-    <div class="comatibility-grid">
-    
-    
-    
-    <a href="/catalog/models/kubernetes">
-    <!-- Please remove these hardcoding -->
-    <!-- This would require updating the already published content with correct compatibility -->
-    
-        <img class="service-mesh-image" src="/images/integrations/kubernetes/icons/color/kubernetes-color.svg" />
-    
-    </a>
-    
 </div>
 
-      <br />
-      
-
-
-
-
-<div id="copy-url">
-  <div class="btn-class">
-    <div class="vertical-center" id="Managing Configuration for Kubernetes Pods">
-      <div class="btn-grp">
-        
-        <a href="https://playground.meshery.io/extension/meshmap?mode=design&type=catalog&id=3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a&name=Managing Configuration for Kubernetes Pods"
-          target="_blank">
-          <button class="import import-brand-primary" style="width: 15rem;">Open in Playground </button>
-        </a>
-        
-
-       
-        
-        <a href="/catalog/3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a/0.0.61/design.yml" download="Managing Configuration for Kubernetes Pods.yml">
-          <button id="resourceDownloadBtn" data-patternId="3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a" onclick="sendCloudTelemetry()"
-            class="import import-brand-secondary" style="width: 7rem;">
-            Download
-          </button>
-        </a>
-
-        <div class="btn-tooltip-grp">
-          <a class="btn tooltip-modal" data-clipboard-target="#copy-url" data-clipboard-text="https://raw.githubusercontent.com/meshery/meshery.io/master/catalog/3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a/0.0.61/design.yml"
-            onmouseout="resetCopyText(this)">
-            <button class="import import-brand-tertiary" style="width: 7rem;">Copy URL
-            </button>
-          </a>
-        </div>
-
-
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<script>
-
-  function sendCloudTelemetry() {
-
-    const element = document.getElementById("resourceDownloadBtn")
-    const patternId = element.dataset.patternid
-    patternId && fetch(`https://cloud.meshery.io/api/content/patterns/download/${patternId}`)
-  }
-
-</script>
-    </div>
-
-  </div>
-  
-</div>
-
-<script>
-  document.title = "Managing Configuration for Kubernetes Pods | Meshery Catalog";
-</script>
 <script src="/assets/js/thumbnail-clickable.js"></script>
 `
 
@@ -1343,6 +1377,46 @@ t is based on a diagram from the Exoscale documentation.
 		
         
         
+        <!-- <p  style= "font-size:20px;"> 
+           
+        </p> -->
+       
+        <!-- <p  style= "font-size:20px;"> 
+           
+        </p> -->
+       
+        <!-- <p  style= "font-size:20px;"> 
+           
+        </p> -->
+       
+        <!-- <p  style= "font-size:20px;"> 
+           
+        </p> -->
+       
+        <!-- <p  style= "font-size:20px;"> 
+           
+        </p> -->
+       
+        <!-- <p  style= "font-size:20px;"> 
+           
+        </p> -->
+       
+        <!-- <p  style= "font-size:20px;"> 
+           
+        </p> -->
+       
+        <!-- <p  style= "font-size:20px;"> 
+           
+        </p> -->
+       
+        <!-- <p  style= "font-size:20px;"> 
+           
+        </p> -->
+       
+        <!-- <p  style= "font-size:20px;"> 
+           
+        </p> -->
+       
         <!-- <p  style= "font-size:20px;"> 
            
         </p> -->
@@ -2797,7 +2871,7 @@ t is based on a diagram from the Exoscale documentation.
 				<li>
 					<h2>
 						
-						<a target="_blank"  
+						<a target="_blank" 
 						href="/community
 " class="community-icon" >
 						
@@ -2869,7 +2943,7 @@ t is based on a diagram from the Exoscale documentation.
 				<li>
 					<h2>
 						
-						<a  
+						<a 
 						href="/#getting-started
 " >
 						
@@ -2907,7 +2981,7 @@ t is based on a diagram from the Exoscale documentation.
 				<li>
 					<h2>
 						
-						<a  
+						<a 
 						href="/community#resources
 " >
 						
@@ -3042,7 +3116,7 @@ t is based on a diagram from the Exoscale documentation.
 			</ul>
 			
 
-			<!-- 
+			<!--
 			<ul class="feed">
 				<a class="twitter-timeline" data-width="320" data-height="320" data-theme="light"
 					data-link-color="#62ACCD" href="https://twitter.com/mesheryio"
@@ -3083,6 +3157,27 @@ t is based on a diagram from the Exoscale documentation.
 
 <script>
 
+    // Functionality for the copy button next to the ID/UUID in Catalog Details
+
+	// function showCopyFeedback(element, message) {
+	// 	let wrapper = element.closest('.catalog-design-id-copy-wrapper');
+	// 	if (!wrapper) {
+	// 		return false;
+	// 	}
+
+	// 	let feedback = wrapper.querySelector('.copy-feedback');
+	// 	if (!feedback) {
+	// 		return false;
+	// 	}
+
+	// 	feedback.textContent = message;
+	// 	window.clearTimeout(element.copyFeedbackTimeout);
+	// 	element.copyFeedbackTimeout = window.setTimeout(function () {
+	// 		feedback.textContent = '';
+	// 	}, 1500);
+	// 	return true;
+	// }
+
 	function resetCopyText(element) {
 		let childElements = element.childNodes
 		if (childElements.length > 3) {
@@ -3101,18 +3196,23 @@ t is based on a diagram from the Exoscale documentation.
 		console.info('Text:', e.text);
 		console.info('Trigger:', e.trigger);
 		let childElements = e.trigger.childNodes;
-		if (childElements.length > 3) {
-		childElements[3].innerHTML = "Copied!";
-	} else {
-		childElements[1].innerHTML = "Copied";
-		childElements[1].style.color = 'white';
-		childElements[1].style.background = "#1a2421";
-	}
+        // ShowCopyFeedback serves as the primary check for the copy button in Catalog Details.
+        // If the copy button is enabled again, the conditional below needs to be encapsulate the childElements conditional
+		// if (!showCopyFeedback(e.trigger, "Copied!")) {}
+
+        if (childElements.length > 3) {
+			childElements[3].innerHTML = "Copied!";
+		} else {
+			childElements[1].innerHTML = "Copied";
+			childElements[1].style.color = 'white';
+			childElements[1].style.background = "#1a2421";
+		}
 		e.clearSelection();
 	});
 	clipboard.on('error', function (e) {
 		console.error('Action:', e.action);
 		console.error('Trigger:', e.trigger);
+		// showCopyFeedback(e.trigger, "Copy failed");
 	});
 </script>
 
@@ -3120,6 +3220,7 @@ t is based on a diagram from the Exoscale documentation.
 	function displayCode(id) {
 		var divId = id + "_code";
 		var element = document.getElementById(divId);
+		var isOpening = !element.classList.contains("showDiv");
 		element.classList.toggle("showDiv");
 		var toggleDivs = document.getElementsByClassName("toggle");
 		if (element.style.maxHeight) {
@@ -3135,12 +3236,16 @@ t is based on a diagram from the Exoscale documentation.
 				}
 			}
 		}
+		var platformOptions = document.querySelectorAll(".platform-option");
+		platformOptions.forEach(function(option) {
+			option.classList.toggle("selected", option.id === id && isOpening);
+		});
 	}
 </script>
 <script type="text/javascript">
 	let toggleBtn = document.getElementById("mode-toggle-btn")
 	toggleBtn.onclick = setMode;
-	
+
 	if (localStorage.getItem("mode") === null) {
     	localStorage.setItem("mode", "dark-mode");
     }
@@ -3161,7 +3266,7 @@ t is based on a diagram from the Exoscale documentation.
 
 	function setMode() {
 		document.body.classList.toggle("dark-mode")
-		
+
 		let allLogos = document.querySelectorAll("#logo-dark-light, .logo-dark-light");
 		if (document.body.classList.contains("dark-mode")) {
 			allLogos.forEach(e => e.src = e.dataset.logoForDark)
@@ -3178,13 +3283,13 @@ t is based on a diagram from the Exoscale documentation.
 			bubbles: true ,
 		}))
 	}
-	
+
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
   $(document).ready(function () {
-    $('.slider').slick({
+    $('.testimonials-slider').slick({
       centerMode: true,
       centerPadding: '0px',
       dots: false,
@@ -3193,77 +3298,22 @@ t is based on a diagram from the Exoscale documentation.
       speed: 400,
       slidesToShow: 3,
       slidesToScroll: 1,
-      autoplay: true, // true
+      autoplay: true,
       autoplaySpeed: 1500,
-      
 
       responsive: [
         {
-          breakpoint: 1300,
+          breakpoint: 1140,
           settings: {
-            slidesToShow: 3,
-          }
-        },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-          }
-        },
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
+            centerMode: false,
           }
         },
         {
           breakpoint: 800,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplaySpeed: 2000,
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerMode: false
-          }
-        },
-        {
-          breakpoint: 400,
-          settings: {
-            slidesToShow: 1,
-            adaptiveWidth: true,
-            slidesToScroll: 1,
-            centerMode: false
-          }
-        },
-        {
-          breakpoint: 380,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            adaptiveWidth: true,
-            centerMode: false
-          }
-        },
-        {
-          breakpoint: 360,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            adaptiveWidth: true,
-            centerMode: false
+            centerMode: false,
           }
         }
       ]
